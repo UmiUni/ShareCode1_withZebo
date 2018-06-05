@@ -1,0 +1,343 @@
+--------------TRAIN STAGE---------------
+step 100, training acc 0.48
+step 200, training acc 0.64
+step 300, training acc 0.74
+step 400, training acc 0.62
+step 500, training acc 0.72
+step 600, training acc 0.82
+step 700, training acc 0.74
+step 800, training acc 0.84
+step 900, training acc 0.8
+step 1000, training acc 0.92
+step 1100, training acc 0.82
+step 1200, training acc 0.84
+step 1300, training acc 0.9
+step 1400, training acc 0.88
+step 1500, training acc 0.8
+step 1600, training acc 0.84
+step 1700, training acc 0.9
+step 1800, training acc 0.92
+step 1900, training acc 0.82
+step 2000, training acc 0.96
+step 2100, training acc 0.88
+step 2200, training acc 0.92
+step 2300, training acc 0.9
+step 2400, training acc 0.92
+step 2500, training acc 0.9
+step 2600, training acc 0.9
+step 2700, training acc 0.92
+step 2800, training acc 0.92
+step 2900, training acc 0.98
+step 3000, training acc 0.94
+step 3100, training acc 0.9
+step 3200, training acc 0.94
+step 3300, training acc 0.94
+step 3400, training acc 0.96
+step 3500, training acc 0.9
+step 3600, training acc 0.98
+step 3700, training acc 0.98
+step 3800, training acc 0.98
+step 3900, training acc 0.98
+step 4000, training acc 1
+step 4100, training acc 1
+step 4200, training acc 0.92
+step 4300, training acc 0.96
+step 4400, training acc 0.96
+step 4500, training acc 0.94
+step 4600, training acc 0.92
+step 4700, training acc 0.98
+step 4800, training acc 0.98
+step 4900, training acc 0.96
+step 5000, training acc 0.88
+test acc 0.9791, inference time:1.3937939999999998
+--------------PRUNE STAGE---------------
+total pruning iteration: 20. pruning percentage each iter: 0.7
+iteration 1, p=0.7
+none-zero in w_conv1 : 404
+none-zero in w_conv2 : 51610
+none-zero in w_conv3 : 206439
+none-zero in w_conv4 : 412877
+none-zero in w_conv5 : 206439
+none-zero in w_fc1 : 1468007
+none-zero in w_fc2 : 734004
+none-zero in w_fc3 : 7168
+test acc after iteration 1 pruning: 0.9559
+retraining step 100, acc 0.96
+retraining step 500, acc 0.96
+retraining step 1000, acc 0.94
+retraining step 1500, acc 0.94
+retraining step 4999, acc 1
+none-zero in w_conv1 after retrain: 404
+none-zero in w_conv2 after retrain: 51610
+none-zero in w_conv3 after retrain: 206439
+none-zero in w_conv4 after retrain: 412877
+none-zero in w_conv5 after retrain: 206439
+none-zero in w_fc1 after retrain: 1468007
+none-zero in w_fc2 after retrain: 734004
+none-zero in w_fc3 after retrain: 7168
+test acc after iteration 1 pruning and retraining: 0.9859
+iteration 2, p=0.49
+none-zero in w_conv1 : 283
+none-zero in w_conv2 : 36127
+none-zero in w_conv3 : 144507
+none-zero in w_conv4 : 289014
+none-zero in w_conv5 : 144507
+none-zero in w_fc1 : 1027605
+none-zero in w_fc2 : 513803
+none-zero in w_fc3 : 5018
+test acc after iteration 2 pruning: 0.8983
+retraining step 100, acc 1
+retraining step 500, acc 0.98
+retraining step 1000, acc 1
+retraining step 1500, acc 0.96
+retraining step 4999, acc 0.98
+none-zero in w_conv1 after retrain: 283
+none-zero in w_conv2 after retrain: 36127
+none-zero in w_conv3 after retrain: 144507
+none-zero in w_conv4 after retrain: 289014
+none-zero in w_conv5 after retrain: 144507
+none-zero in w_fc1 after retrain: 1027605
+none-zero in w_fc2 after retrain: 513803
+none-zero in w_fc3 after retrain: 5018
+test acc after iteration 2 pruning and retraining: 0.9904
+iteration 3, p=0.343
+none-zero in w_conv1 : 198
+none-zero in w_conv2 : 25289
+none-zero in w_conv3 : 101155
+none-zero in w_conv4 : 202310
+none-zero in w_conv5 : 101155
+none-zero in w_fc1 : 719324
+none-zero in w_fc2 : 359662
+none-zero in w_fc3 : 3513
+test acc after iteration 3 pruning: 0.542
+retraining step 100, acc 0.92
+retraining step 500, acc 0.98
+retraining step 1000, acc 0.96
+retraining step 1500, acc 1
+retraining step 4999, acc 0.98
+none-zero in w_conv1 after retrain: 198
+none-zero in w_conv2 after retrain: 25289
+none-zero in w_conv3 after retrain: 101155
+none-zero in w_conv4 after retrain: 202310
+none-zero in w_conv5 after retrain: 101155
+none-zero in w_fc1 after retrain: 719324
+none-zero in w_fc2 after retrain: 359662
+none-zero in w_fc3 after retrain: 3513
+test acc after iteration 3 pruning and retraining: 0.9894
+iteration 4, p=0.2401
+none-zero in w_conv1 : 139
+none-zero in w_conv2 : 17703
+none-zero in w_conv3 : 70809
+none-zero in w_conv4 : 141617
+none-zero in w_conv5 : 70809
+none-zero in w_fc1 : 503527
+none-zero in w_fc2 : 251764
+none-zero in w_fc3 : 2459
+test acc after iteration 4 pruning: 0.1391
+retraining step 100, acc 0.92
+retraining step 500, acc 0.96
+retraining step 1000, acc 0.98
+retraining step 1500, acc 0.98
+retraining step 4999, acc 0.92
+none-zero in w_conv1 after retrain: 139
+none-zero in w_conv2 after retrain: 17703
+none-zero in w_conv3 after retrain: 70809
+none-zero in w_conv4 after retrain: 141617
+none-zero in w_conv5 after retrain: 70809
+none-zero in w_fc1 after retrain: 503527
+none-zero in w_fc2 after retrain: 251764
+none-zero in w_fc3 after retrain: 2459
+test acc after iteration 4 pruning and retraining: 0.9911
+iteration 5, p=0.16807
+none-zero in w_conv1 : 97
+none-zero in w_conv2 : 12392
+none-zero in w_conv3 : 49566
+none-zero in w_conv4 : 99132
+none-zero in w_conv5 : 49567
+none-zero in w_fc1 : 352469
+none-zero in w_fc2 : 176235
+none-zero in w_fc3 : 1722
+test acc after iteration 5 pruning: 0.2235
+retraining step 100, acc 0.7
+retraining step 500, acc 1
+retraining step 1000, acc 1
+retraining step 1500, acc 0.96
+retraining step 4999, acc 0.98
+none-zero in w_conv1 after retrain: 97
+none-zero in w_conv2 after retrain: 12392
+none-zero in w_conv3 after retrain: 49566
+none-zero in w_conv4 after retrain: 99132
+none-zero in w_conv5 after retrain: 49567
+none-zero in w_fc1 after retrain: 352469
+none-zero in w_fc2 after retrain: 176235
+none-zero in w_fc3 after retrain: 1722
+test acc after iteration 5 pruning and retraining: 0.9912
+iteration 6, p=0.117649
+none-zero in w_conv1 : 68
+none-zero in w_conv2 : 8675
+none-zero in w_conv3 : 34697
+none-zero in w_conv4 : 69393
+none-zero in w_conv5 : 34697
+none-zero in w_fc1 : 246728
+none-zero in w_fc2 : 123364
+none-zero in w_fc3 : 1205
+test acc after iteration 6 pruning: 0.1879
+retraining step 100, acc 0.66
+retraining step 500, acc 0.94
+retraining step 1000, acc 0.96
+retraining step 1500, acc 0.98
+retraining step 4999, acc 0.98
+none-zero in w_conv1 after retrain: 68
+none-zero in w_conv2 after retrain: 8675
+none-zero in w_conv3 after retrain: 34697
+none-zero in w_conv4 after retrain: 69393
+none-zero in w_conv5 after retrain: 34697
+none-zero in w_fc1 after retrain: 246728
+none-zero in w_fc2 after retrain: 123364
+none-zero in w_fc3 after retrain: 1205
+test acc after iteration 6 pruning and retraining: 0.9886
+iteration 7, p=0.0823543
+none-zero in w_conv1 : 48
+none-zero in w_conv2 : 6072
+none-zero in w_conv3 : 24288
+none-zero in w_conv4 : 48575
+none-zero in w_conv5 : 24288
+none-zero in w_fc1 : 172710
+none-zero in w_fc2 : 86355
+none-zero in w_fc3 : 844
+test acc after iteration 7 pruning: 0.2251
+retraining step 100, acc 0.38
+retraining step 500, acc 0.86
+retraining step 1000, acc 0.92
+retraining step 1500, acc 0.98
+retraining step 4999, acc 0.98
+none-zero in w_conv1 after retrain: 48
+none-zero in w_conv2 after retrain: 6072
+none-zero in w_conv3 after retrain: 24288
+none-zero in w_conv4 after retrain: 48575
+none-zero in w_conv5 after retrain: 24288
+none-zero in w_fc1 after retrain: 172710
+none-zero in w_fc2 after retrain: 86355
+none-zero in w_fc3 after retrain: 844
+test acc after iteration 7 pruning and retraining: 0.9896
+iteration 8, p=0.057648
+none-zero in w_conv1 : 34
+none-zero in w_conv2 : 4251
+none-zero in w_conv3 : 17002
+none-zero in w_conv4 : 34003
+none-zero in w_conv5 : 17002
+none-zero in w_fc1 : 120897
+none-zero in w_fc2 : 60449
+none-zero in w_fc3 : 591
+test acc after iteration 8 pruning: 0.1263
+retraining step 100, acc 0.42
+retraining step 500, acc 0.82
+retraining step 1000, acc 0.94
+retraining step 1500, acc 0.94
+retraining step 4999, acc 1
+none-zero in w_conv1 after retrain: 34
+none-zero in w_conv2 after retrain: 4251
+none-zero in w_conv3 after retrain: 17002
+none-zero in w_conv4 after retrain: 34003
+none-zero in w_conv5 after retrain: 17002
+none-zero in w_fc1 after retrain: 120897
+none-zero in w_fc2 after retrain: 60449
+none-zero in w_fc3 after retrain: 591
+test acc after iteration 8 pruning and retraining: 0.9846
+iteration 9, p=0.0403536
+none-zero in w_conv1 : 24
+none-zero in w_conv2 : 2976
+none-zero in w_conv3 : 11901
+none-zero in w_conv4 : 23802
+none-zero in w_conv5 : 11901
+none-zero in w_fc1 : 84628
+none-zero in w_fc2 : 42314
+none-zero in w_fc3 : 414
+test acc after iteration 9 pruning: 0.1827
+retraining step 100, acc 0.44
+retraining step 500, acc 0.9
+retraining step 1000, acc 0.9
+retraining step 1500, acc 0.94
+retraining step 4999, acc 0.96
+none-zero in w_conv1 after retrain: 24
+none-zero in w_conv2 after retrain: 2976
+none-zero in w_conv3 after retrain: 11901
+none-zero in w_conv4 after retrain: 23802
+none-zero in w_conv5 after retrain: 11901
+none-zero in w_fc1 after retrain: 84628
+none-zero in w_fc2 after retrain: 42314
+none-zero in w_fc3 after retrain: 414
+test acc after iteration 9 pruning and retraining: 0.9764
+iteration 10, p=0.0282475
+none-zero in w_conv1 : 17
+none-zero in w_conv2 : 2083
+none-zero in w_conv3 : 8331
+none-zero in w_conv4 : 16662
+none-zero in w_conv5 : 8331
+none-zero in w_fc1 : 59240
+none-zero in w_fc2 : 29620
+none-zero in w_fc3 : 290
+test acc after iteration 10 pruning: 0.1362
+retraining step 100, acc 0.66
+retraining step 500, acc 0.86
+retraining step 1000, acc 0.98
+retraining step 1500, acc 0.9
+retraining step 4999, acc 0.98
+none-zero in w_conv1 after retrain: 17
+none-zero in w_conv2 after retrain: 2083
+none-zero in w_conv3 after retrain: 8331
+none-zero in w_conv4 after retrain: 16662
+none-zero in w_conv5 after retrain: 8331
+none-zero in w_fc1 after retrain: 59240
+none-zero in w_fc2 after retrain: 29620
+none-zero in w_fc3 after retrain: 290
+test acc after iteration 10 pruning and retraining: 0.9798
+iteration 11, p=0.0197733
+none-zero in w_conv1 : 12
+none-zero in w_conv2 : 1458
+none-zero in w_conv3 : 5832
+none-zero in w_conv4 : 11663
+none-zero in w_conv5 : 5832
+none-zero in w_fc1 : 41468
+none-zero in w_fc2 : 20734
+none-zero in w_fc3 : 203
+test acc after iteration 11 pruning: 0.5355
+retraining step 100, acc 0.9
+retraining step 500, acc 0.96
+retraining step 1000, acc 0.94
+retraining step 1500, acc 0.96
+retraining step 4999, acc 0.96
+none-zero in w_conv1 after retrain: 12
+none-zero in w_conv2 after retrain: 1458
+none-zero in w_conv3 after retrain: 5832
+none-zero in w_conv4 after retrain: 11663
+none-zero in w_conv5 after retrain: 5832
+none-zero in w_fc1 after retrain: 41468
+none-zero in w_fc2 after retrain: 20734
+none-zero in w_fc3 after retrain: 203
+test acc after iteration 11 pruning and retraining: 0.9801
+iteration 12, p=0.0138413
+none-zero in w_conv1 : 8
+none-zero in w_conv2 : 1021
+none-zero in w_conv3 : 4082
+none-zero in w_conv4 : 8164
+none-zero in w_conv5 : 4082
+none-zero in w_fc1 : 29028
+none-zero in w_fc2 : 14514
+none-zero in w_fc3 : 142
+test acc after iteration 12 pruning: 0.1137
+retraining step 100, acc 0.36
+retraining step 500, acc 0.72
+retraining step 1000, acc 0.76
+retraining step 1500, acc 0.88
+retraining step 4999, acc 0.96
+none-zero in w_conv1 after retrain: 8
+none-zero in w_conv2 after retrain: 1021
+none-zero in w_conv3 after retrain: 4082
+none-zero in w_conv4 after retrain: 8164
+none-zero in w_conv5 after retrain: 4082
+none-zero in w_fc1 after retrain: 29028
+none-zero in w_fc2 after retrain: 14514
+none-zero in w_fc3 after retrain: 142
+test acc after iteration 12 pruning and retraining: 0.9521
+

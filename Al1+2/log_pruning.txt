@@ -1,0 +1,101 @@
+-------------------- Iter 0 --------------------
+Re-train step 100, error rate 0.58
+Re-train step 200, error rate 0.43
+Re-train step 300, error rate 0.52
+Re-train step 400, error rate 0.41
+Re-train step 500, error rate 0.37
+Re-train step 600, error rate 0.32
+Re-train step 700, error rate 0.35
+Re-train step 800, error rate 0.32
+Re-train step 900, error rate 0.37
+Re-train step 1000, error rate 0.33
+Pruning network.
+After pruning, previous error 0.9 is no more than current error 0.9. Evaluating pruned network.
+Current error 0.9 is more than error toerance 0.3. Decrese sparsity by 1% in each layer and retrain the network.
+-------------------- Iter 1 --------------------
+Re-train step 100, error rate 0.64
+Re-train step 200, error rate 0.5
+Re-train step 300, error rate 0.36
+Re-train step 400, error rate 0.39
+Re-train step 500, error rate 0.39
+Re-train step 600, error rate 0.3
+Re-train step 700, error rate 0.31
+Re-train step 800, error rate 0.32
+Re-train step 900, error rate 0.29
+Re-train step 1000, error rate 0.3
+Pruning network.
+After pruning, previous error 0.9 is more than current error 0.3127. Retraining network.
+-------------------- Iter 2 --------------------
+Re-train step 100, error rate 0.28
+Re-train step 200, error rate 0.24
+Re-train step 300, error rate 0.26
+Re-train step 400, error rate 0.3
+Re-train step 500, error rate 0.34
+Re-train step 600, error rate 0.21
+Re-train step 700, error rate 0.24
+Re-train step 800, error rate 0.25
+Re-train step 900, error rate 0.3
+Re-train step 1000, error rate 0.33
+Pruning network.
+After pruning, previous error 0.3127 is more than current error 0.2824. Retraining network.
+-------------------- Iter 3 --------------------
+Re-train step 100, error rate 0.23
+Re-train step 200, error rate 0.2
+Re-train step 300, error rate 0.22
+Re-train step 400, error rate 0.17
+Re-train step 500, error rate 0.29
+Re-train step 600, error rate 0.24
+Re-train step 700, error rate 0.18
+Re-train step 800, error rate 0.23
+Re-train step 900, error rate 0.22
+Re-train step 1000, error rate 0.24
+Pruning network.
+After pruning, previous error 0.2824 is more than current error 0.2814. Retraining network.
+-------------------- Iter 4 --------------------
+Re-train step 100, error rate 0.17
+Re-train step 200, error rate 0.14
+Re-train step 300, error rate 0.16
+Re-train step 400, error rate 0.17
+Re-train step 500, error rate 0.25
+Re-train step 600, error rate 0.19
+Re-train step 700, error rate 0.15
+Re-train step 800, error rate 0.13
+Re-train step 900, error rate 0.13
+Re-train step 1000, error rate 0.15
+Pruning network.
+After pruning, previous error 0.2814 is more than current error 0.2601. Retraining network.
+-------------------- Iter 5 --------------------
+Re-train step 100, error rate 0.17
+Re-train step 200, error rate 0.15
+Re-train step 300, error rate 0.25
+Re-train step 400, error rate 0.14
+Re-train step 500, error rate 0.22
+Re-train step 600, error rate 0.11
+Re-train step 700, error rate 0.11
+Re-train step 800, error rate 0.15
+Re-train step 900, error rate 0.15
+Re-train step 1000, error rate 0.18
+Pruning network.
+After pruning, previous error 0.2601 is more than current error 0.254. Retraining network.
+-------------------- Iter 6 --------------------
+Re-train step 100, error rate 0.13
+Re-train step 200, error rate 0.13
+Re-train step 300, error rate 0.15
+Re-train step 400, error rate 0.1
+Re-train step 500, error rate 0.23
+Re-train step 600, error rate 0.15
+Re-train step 700, error rate 0.13
+Re-train step 800, error rate 0.16
+Re-train step 900, error rate 0.09
+Re-train step 1000, error rate 0.2
+Pruning network.
+After pruning, previous error 0.254 is no more than current error 0.2636. Evaluating pruned network.
+Current error 0.2636 is less than or equal to error toerance 0.3. Save pruned network to ./models/alexnet_pruning_ckpt.
+Layer w_conv4, Sparsity 0.98
+Layer w_conv3, Sparsity 0.95
+Layer w_conv2, Sparsity 0.88
+Layer w_fc2, Sparsity 0.99
+Layer w_conv5, Sparsity 0.89
+Layer w_conv1, Sparsity 0.04
+Layer w_fc1, Sparsity 0.99
+Layer w_fc3, Sparsity 0.93
